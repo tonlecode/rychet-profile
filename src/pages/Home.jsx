@@ -88,7 +88,7 @@ function Home() {
 
             <div>
               <h3 className="text-xl font-bold text-white">Teaching</h3>
-              <p className="text-orange-500 font-semibold mb-2">2023-2024</p>
+              <p className="text-orange-500 font-semibold mb-2">2022-2023</p>
               <p className="text-gray-300">
                 I am a teacher to monks and children without taking any money.
               </p>
