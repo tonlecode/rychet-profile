@@ -13,7 +13,7 @@ function Home() {
       {/* Hero Section */}
       <section className="relative flex items-center justify-center text-white py-32 text-center">
         <div className="max-w-4xl px-6 z-10">
-          <h1 className="text-5xl text-orange-500 mb-6 drop-shadow-lg font-medium">
+          <h1 className="text-5xl text-orange-600 mb-6 drop-shadow-lg font-medium">
             Chet .Ry{" "}
             <span className="text-white text-4xl">living in Cambodia</span>
           </h1>

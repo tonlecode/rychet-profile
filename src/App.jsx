@@ -1,8 +1,14 @@
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-import Home from './pages/Home';
-import Blog from './pages/Blog';
-import EduDT from './pages/EduDT';
-import WatTD from './pages/watTD';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+  Navigate,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Blog from "./pages/Blog";
+import EduDT from "./pages/EduDT";
+import WatTD from "./pages/watTD";
 
 import "./App.css";
 
@@ -14,12 +20,35 @@ function App() {
         <nav className="bg-black shadow-lg sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex justify-between items-center py-4">
-              <Link to="/" className="text-2xl text-white">rychet/profile</Link>
+              <NavLink
+                to="/"
+                className="text-2xl text-white hover:text-gray-300 transition"
+              >
+                rychet/profile
+              </NavLink>
               <div className="flex space-x-8 text-lg">
-  <Link to="/" className="hover:text-orange-500 transition">Home</Link>
-  <Link to="/blog" className="hover:text-orange-500 transition">Blog</Link>
-</div>
-
+                <NavLink
+                  to="/"
+                  end
+                  className={({ isActive }) =>
+                    isActive
+                      ? "border-b-2 border-orange-500  pb-1"
+                      : "hover:text-orange-500 transition"
+                  }
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "border-b-2 border-orange-500  pb-1"
+                      : "hover:text-orange-500 transition"
+                  }
+                >
+                  Blog
+                </NavLink>
+              </div>
             </div>
           </div>
         </nav>
@@ -30,7 +59,6 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/eduDT" element={<EduDT />} />
           <Route path="/watDT" element={<WatTD />} />
-
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
