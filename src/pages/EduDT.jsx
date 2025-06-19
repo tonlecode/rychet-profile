@@ -9,8 +9,7 @@ import chat from "../assets/edu/chat.png";
 
 function InfoSection({ image, title, color, description, items }) {
   return (
-    <div className=" max-w-6xl mx-auto rounded-2xl p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
-      {/* Image */}
+    <div className="max-w-6xl mx-auto rounded-2xl p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <div className="rounded-2xl overflow-hidden flex justify-center">
         <img
           src={image}
@@ -19,7 +18,6 @@ function InfoSection({ image, title, color, description, items }) {
         />
       </div>
 
-      {/* Text */}
       <div>
         <h2 className={`text-2xl md:text-4xl text-center font-bold ${color} mb-6`}>
           {title}
@@ -48,8 +46,6 @@ function Divider() {
 }
 
 function EduDT() {
-
-  // Content items for each section
   const contentItems = [
     { label: "Buddhism", text: "Access Buddhist teachings and spiritual content." },
     { label: "Knowledge", text: "Explore educational material to improve your skills and understanding." },
@@ -59,8 +55,6 @@ function EduDT() {
     { label: "Cartoons", text: "Enjoy educational and English-strengthening animated content suitable for all ages." },
   ];
 
-
-  // hoome Items for each section
   const homeItems = [
     { label: "Quick Access", text: "Instantly reach your favorite content types." },
     { label: "Personalized Feed", text: "Suggestions based on your previous learning." },
@@ -68,36 +62,33 @@ function EduDT() {
     { label: "Trending Topics", text: "See what's currently popular and engaging." },
   ];
 
-  // Book items for each section
   const bookItems = [
-    { label: "Summary of Key Points", text: " Understand the main ideas quickly." },
+    { label: "Summary of Key Points", text: "Understand the main ideas quickly." },
     { label: "Highlighted Concepts", text: "Grasp the core lessons and insights." },
     { label: "Study Guides", text: "Reinforce your learning with questions and notes." },
     { label: "Search & Filter Tools", text: "Find exactly what you need." },
     { label: "Multi-device Access", text: "Read anytime, anywhere." },
   ];
 
-  // news items for each section
   const newsItems = [
-    { label: "Brief Summaries", text: " Quickly grasp the key events and messages." },
-    { label: " Topic Categories", text: " Politics, technology, education, health, and more." },
+    { label: "Brief Summaries", text: "Quickly grasp the key events and messages." },
+    { label: "Topic Categories", text: "Politics, technology, education, health, and more." },
     { label: "Fact-Checked Sources", text: "Prioritizing accuracy and credibility." },
     { label: "Search & Filter Tools", text: "Find exactly what you need." },
-    { label: "Context & Analysis", text: " Understand the why behind the headlines." },
+    { label: "Context & Analysis", text: "Understand the why behind the headlines." },
   ];
-// setting items for each section
-const settingItems = [
-  { label: "Update Profile Info", text: "Name, email, phone, and bio." },
-  { label: "Manage Privacy Settings", text: "Control what info is visible." },
-  { label: "Notification Preferences", text: "Enable or disable push & email alerts." },
-  { label: "Personalization Options", text: "Adjust themes or layout (if available)." },
-  { label: "Language & Region", text: "Set your preferred display language." },
-  { label: "Sync & Backup", text: "Keep your data safe and up-to-date across devices." },
-];
 
+  const settingItems = [
+    { label: "Update Profile Info", text: "Name, email, phone, and bio." },
+    { label: "Manage Privacy Settings", text: "Control what info is visible." },
+    { label: "Notification Preferences", text: "Enable or disable push & email alerts." },
+    { label: "Personalization Options", text: "Adjust themes or layout (if available)." },
+    { label: "Language & Region", text: "Set your preferred display language." },
+    { label: "Sync & Backup", text: "Keep your data safe and up-to-date across devices." },
+  ];
 
   return (
-    <div className="py-16 px-6 md:px-20 bg-[#121517] min-h-screen">
+    <div className="bg-black min-h-screen py-16 px-6 md:px-20">
       <h1 className="text-white text-4xl font-bold text-center mb-12">
         Welcome to <span className="text-orange-500">EduJourney</span>
       </h1>
@@ -164,8 +155,7 @@ const settingItems = [
         image={news}
         title="Educational News"
         color="text-cyan-400"
-        description="Access reliable, up-to-date news articles from trusted sources, covering global and local events. Each article comes with:
-"
+        description="Access reliable, up-to-date news articles from trusted sources, covering global and local events. Each article comes with:"
         items={newsItems}
       />
 
