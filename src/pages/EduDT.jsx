@@ -48,21 +48,53 @@ function Divider() {
 }
 
 function EduDT() {
+
+  // Content items for each section
   const contentItems = [
     { label: "Buddhism", text: "Access Buddhist teachings and spiritual content." },
     { label: "Knowledge", text: "Explore educational material to improve your skills and understanding." },
     { label: "English", text: "Practice and learn English with videos and interactive resources." },
     { label: "Podcasts", text: "Listen to educational and motivational podcasts anytime." },
     { label: "Technology", text: "Stay informed about the latest tech trends and digital tools." },
-    { label: "Cartoons", text: "Enjoy fun and educational animated content suitable for all ages." },
+    { label: "Cartoons", text: "Enjoy educational and English-strengthening animated content suitable for all ages." },
   ];
 
+
+  // hoome Items for each section
   const homeItems = [
     { label: "Quick Access", text: "Instantly reach your favorite content types." },
     { label: "Personalized Feed", text: "Suggestions based on your previous learning." },
     { label: "Search Bar", text: "Easily find any topic or content category." },
-    { label: "Trending Topics", text: "See what’s currently popular and engaging." },
+    { label: "Trending Topics", text: "See what's currently popular and engaging." },
   ];
+
+  // Book items for each section
+  const bookItems = [
+    { label: "Summary of Key Points", text: " Understand the main ideas quickly." },
+    { label: "Highlighted Concepts", text: "Grasp the core lessons and insights." },
+    { label: "Study Guides", text: "Reinforce your learning with questions and notes." },
+    { label: "Search & Filter Tools", text: "Find exactly what you need." },
+    { label: "Multi-device Access", text: "Read anytime, anywhere." },
+  ];
+
+  // news items for each section
+  const newsItems = [
+    { label: "Brief Summaries", text: " Quickly grasp the key events and messages." },
+    { label: " Topic Categories", text: " Politics, technology, education, health, and more." },
+    { label: "Fact-Checked Sources", text: "Prioritizing accuracy and credibility." },
+    { label: "Search & Filter Tools", text: "Find exactly what you need." },
+    { label: "Context & Analysis", text: " Understand the why behind the headlines." },
+  ];
+// setting items for each section
+const settingItems = [
+  { label: "Update Profile Info", text: "Name, email, phone, and bio." },
+  { label: "Manage Privacy Settings", text: "Control what info is visible." },
+  { label: "Notification Preferences", text: "Enable or disable push & email alerts." },
+  { label: "Personalization Options", text: "Adjust themes or layout (if available)." },
+  { label: "Language & Region", text: "Set your preferred display language." },
+  { label: "Sync & Backup", text: "Keep your data safe and up-to-date across devices." },
+];
+
 
   return (
     <div className="py-16 px-6 md:px-20 bg-[#121517] min-h-screen">
@@ -122,8 +154,8 @@ function EduDT() {
         image={book}
         title="Digital Library"
         color="text-purple-400"
-        description="Access digital books, articles, and study resources. Each reading includes a summary of key points to guide you."
-        items={homeItems}
+        description="Explore a growing library of digital books, scholarly articles, and learning materials across a wide range of subjects. Each reading is accompanied by:"
+        items={bookItems}
       />
 
       <Divider />
@@ -132,8 +164,9 @@ function EduDT() {
         image={news}
         title="Educational News"
         color="text-cyan-400"
-        description="Stay informed about the latest in education, events, and innovation across Cambodia and globally."
-        items={homeItems}
+        description="Access reliable, up-to-date news articles from trusted sources, covering global and local events. Each article comes with:
+"
+        items={newsItems}
       />
 
       <Divider />
@@ -142,8 +175,8 @@ function EduDT() {
         image={setting}
         title="Customize Your Learning"
         color="text-red-400"
-        description="Adjust your preferences, filter your content, and configure accessibility settings to match your needs."
-        items={homeItems}
+        description="Take full control of your account preferences and notifications. The Settings page lets you:"
+        items={settingItems}
       />
     </div>
   );

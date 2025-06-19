@@ -7,9 +7,14 @@ function Blog() {
   return (
     <section className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
-          Blog
+        <h2 className="text-4xl font-bold text-white mb-5 text-center">
+          <span className="text-blue-500 px-2">My</span> 
+          <span className="text-red-500">B</span>
+          <span className="text-cyan-500">l</span>
+          <span className="text-orange-500">o</span>
+          <span className="text-green-500">g</span>
         </h2>
+        <h2 className="text-4xl font-bold text-white mb-12 text-center">This is the ability I created.</h2>
 
         {/* Grid Layout for Blog Cards */}
         <div className="grid md:grid-cols-2 gap-8">
