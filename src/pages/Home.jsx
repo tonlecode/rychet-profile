@@ -35,6 +35,8 @@ function Home() {
           <h2 className="text-4xl font-bold text-white mb-12">Experiences</h2>
           <div className="border-l-2 border-gray-600 pl-6 space-y-8">
             {/* Experience Item */}
+
+            {/* Founder - EduJourney */}
             <div>
               <h3 className="text-xl font-bold text-white">
                 Founder - EduJourney
@@ -53,6 +55,8 @@ function Home() {
               </p>
             </div>
 
+
+          {/*  Wat Management */}
             <div>
               <h3 className="text-xl font-bold text-white">
                 Monk Management System
@@ -66,26 +70,19 @@ function Home() {
                 transmission to the leadership.
               </p>
             </div>
-            <div>
-              <h3 className="text-xl font-bold text-white">
-                Back Management System
-              </h3>
-              <p className="text-orange-500 font-semibold mb-2">
-                2023 till present
-              </p>
-              <p className="text-gray-300">
-                I was created to manage people in the bank and manage salaries.
-              </p>
-            </div>
+    
 
+          {/* Designer */}
             <div>
-              <h3 className="text-xl font-bold text-white">designer</h3>
+              <h3 className="text-xl font-bold text-white">Designer </h3>
               <p className="text-orange-500 font-semibold mb-2">
                 2023 till present
               </p>
               <p className="text-gray-300">I worked as a designer and photographer in the temple.</p>
             </div>
 
+
+            {/* Teaching */}
             <div>
               <h3 className="text-xl font-bold text-white">Teaching</h3>
               <p className="text-orange-500 font-semibold mb-2">2022-2023</p>
