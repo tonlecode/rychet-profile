@@ -9,13 +9,13 @@ import chat from "../assets/edu/chat.png";
 
 function InfoSection({ image, title, color, description, items }) {
   return (
-    <div className="bg-[#1E2327] max-w-6xl mx-auto rounded-2xl p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center shadow-xl hover:shadow-orange-500/30 transition duration-300">
+    <div className=" max-w-6xl mx-auto rounded-2xl p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
       {/* Image */}
-      <div className="rounded-2xl overflow-hidden shadow-md flex justify-center">
+      <div className="rounded-2xl overflow-hidden flex justify-center">
         <img
           src={image}
           alt="Section"
-          className="w-full max-w-xs object-contain"
+          className="w-full max-w-xs object-contain rounded-xl"
         />
       </div>
 
