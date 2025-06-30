@@ -87,7 +87,7 @@ function EduDT() {
     { label: "Sync & Backup", text: "Keep your data safe and up-to-date across devices." },
   ];
 
-  return (
+ return (
     <div className="bg-black min-h-screen py-16 px-6 md:px-20">
       <h1 className="text-white text-4xl font-bold text-center mb-12">
         Welcome to <span className="text-orange-500">EduJourney</span>

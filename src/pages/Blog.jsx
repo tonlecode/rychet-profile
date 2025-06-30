@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Blog() {
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-gray-900 ">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-white mb-5 text-center">
           <span className="text-blue-500 px-2">My</span>
