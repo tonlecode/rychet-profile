@@ -55,7 +55,7 @@ const photoList = [
               href={photo.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl overflow-hidden shadow-md bg-white border border-gray-200 hover:shadow-xl transition duration-300 transform hover:scale-105"
+              className="rounded-xl overflow-hidden shadow-md bg-white border border-gray-200 hover:shadow-xl transition duration-400 transform hover:scale-101"
             >
               <img
                 src={photo.url}
