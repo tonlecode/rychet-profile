@@ -60,9 +60,9 @@ const libraryMenu = <Menu items={libraryItems} />;
 function Header() {
   return (
     <div className="container mx-auto">
-      <nav className="fixed top-0 left-0 w-full bg-blue-600 text-white justify-between items-center rounded-b-4xl shadow-xl px-10 py-4 flex z-50">
+      <nav className="fixed top-0 left-0 w-full bg-blue-600 text-white justify-between items-center rounded-b-4xl shadow-xl px-30 py-4 flex">
         <p className="hover:text-red-300 text-lg">
-          <NavLink to="/" className="text-white hover:text-red-300 font-semibold">
+          <NavLink to="/" className=" hover:text-red-300 text-xl">
             រី-ចិត្ត / គេហទំព័រ
           </NavLink>
         </p>
