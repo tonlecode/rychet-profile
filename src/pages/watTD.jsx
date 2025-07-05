@@ -11,7 +11,7 @@ function WatTD() {
           I cannot display your data at this time. Please wait until I am finished editing or hiding the data.
         </p>
         <p className="text-md text-gray-300 italic">
-          Please excuse me, <span className='text-green-500'>Ry Chet</span>.
+          Please excuse me, <span className='text-green-500 '>Ry Chet</span>.
         </p>
       </div>
     </div>

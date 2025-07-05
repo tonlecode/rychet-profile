@@ -10,7 +10,7 @@ import Blog from "./pages/Blog";
 import EduDT from "./pages/EduDT";
 import WatTD from "./pages/watTD";
 
-
+// Google Fonts for Khmer Battambang is now loaded in index.html
 import "./App.css";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     <Router>
       <div className="bg-black text-white min-h-screen font-sans">
         {/* Navigation */}
-        <nav className="bg-black shadow-lg sticky top-0 z-50">
+        <nav className="bg-blue-800 shadow-lg sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4">
             <div className="flex justify-between items-center py-4">
               <NavLink
@@ -32,22 +32,22 @@ function App() {
                   to="/"
                   end
                   className={({ isActive }) =>
-                    isActive
-                      ? "border-b-2 border-orange-500  pb-1"
-                      : "hover:text-orange-500 transition"
+                    (isActive
+                      ? "border-b-2 border-orange-500 pb-1"
+                      : "hover:text-orange-500 transition") + " font-khmer"
                   }
                 >
-                  Home
+                  ទំព័រដើម
                 </NavLink>
                 <NavLink
                   to="/blog"
                   className={({ isActive }) =>
-                    isActive
-                      ? "border-b-2 border-orange-500  pb-1"
-                      : "hover:text-orange-500 transition"
+                    (isActive
+                      ? "border-b-2 border-orange-500 pb-1"
+                      : "hover:text-orange-500 transition") + " font-khmer"
                   }
                 >
-                  Blog
+                  ប្លុក
                 </NavLink>
               </div>
             </div>
@@ -70,6 +70,7 @@ function App() {
               <p className="text-gray-400 text-center">
                 2025, Chet .Ry. All rights reserved.
               </p>
+              <h1 className="font-khmer">ចិត្ត</h1>
             </div>
           </div>
         </footer>

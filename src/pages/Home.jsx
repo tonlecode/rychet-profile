@@ -10,20 +10,27 @@ import {
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Import your local images
-import photo1 from '../assets/myphoto/p1.jpg';
-import photo2 from '../assets/myphoto/p2.jpg';
-import photo4 from '../assets/myphoto/p4.jpg';
-import photo6 from '../assets/myphoto/p6.jpg';
-import photo8 from '../assets/myphoto/p8.jpg';
-import photo9 from '../assets/myphoto/p9.jpg';
-import photo10 from '../assets/myphoto/p10.jpg';
-import photo11 from '../assets/myphoto/p11.jpg';
-import photo12 from '../assets/myphoto/p12.jpg';
+import photo1 from "../assets/myphoto/p1.jpg";
+import photo2 from "../assets/myphoto/p2.jpg";
+import photo4 from "../assets/myphoto/p4.jpg";
+import photo6 from "../assets/myphoto/p6.jpg";
+import photo8 from "../assets/myphoto/p8.jpg";
+import photo9 from "../assets/myphoto/p9.jpg";
+import photo10 from "../assets/myphoto/p10.jpg";
+import photo11 from "../assets/myphoto/p11.jpg";
+import photo12 from "../assets/myphoto/p12.jpg";
 
 // All imported images in an array
 const images = [
-  photo1, photo2,  photo4, photo6,
-  photo8, photo9, photo10, photo11, photo12,
+  photo1,
+  photo2,
+  photo4,
+  photo6,
+  photo8,
+  photo9,
+  photo10,
+  photo11,
+  photo12,
 ];
 
 function Home() {
@@ -49,16 +56,16 @@ function Home() {
         style={{
           // Dynamic background based on current image for a richer feel
           backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(${images[currentImageIndex]})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed', // Makes the background fixed while scrolling
-          transition: 'background-image 1s ease-in-out', // Smooth transition for background change
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed", // Makes the background fixed while scrolling
+          transition: "background-image 1s ease-in-out", // Smooth transition for background change
         }}
       >
         {/* Main Content Area */}
-        <div className="max-w-5xl w-full mx-auto text-center z-10 px-4 md:px-0">
+        <div className="max-w-5xl w-full mx-auto text-center z-10 px-4 md:px-0 ">
           {/* Main Title and Description */}
-          <h1 className="text-5xl md:text-7xl font-extrabold text-orange-500 mb-4 animate-fade-in-up drop-shadow-xl">
+          <h1 className="text-5xl text-center font-bold mb-4 animate-fade-in-up delay-100">
             Chet Ry
           </h1>
           <p className="text-2xl md:text-3xl text-white mb-8 animate-fade-in-up delay-200 opacity-90">
@@ -73,8 +80,6 @@ function Home() {
             developing practical solutions that save time, reduce energy
             consumption, and create seamless user experiences.
           </p>
-
-         
 
           {/* Carousel for Album Photos - Now a visual element within the section */}
           {images.length > 0 && (
@@ -110,7 +115,9 @@ function Home() {
                     key={idx}
                     onClick={() => setCurrentImageIndex(idx)}
                     className={`w-3 h-3 rounded-full border border-white transition-colors duration-300 ${
-                      idx === currentImageIndex ? 'bg-orange-500 scale-125' : 'bg-gray-400/50 hover:bg-gray-200'
+                      idx === currentImageIndex
+                        ? "bg-orange-500 scale-125"
+                        : "bg-gray-400/50 hover:bg-gray-200"
                     }`}
                     aria-label={`Go to image ${idx + 1}`}
                   ></button>
@@ -120,136 +127,92 @@ function Home() {
           )}
         </div>
       </section>
-
-      {/* Experiences Section: Refined layout with distinct cards and icons */}
-          {/* Experiences Section */}
-
-      <section className="bg-gray-900 py-12 px-4">
-
-        <div className="max-w-4xl mx-auto">
-
-          <h2 className="text-4xl font-bold text-white mb-12">Experiences</h2>
-
-          <div className="border-l-2 border-gray-600 pl-6 space-y-8">
-
-            {/* Experience Item */}
-
-
-
-            {/* Founder - EduJourney */}
-
-            <div>
-
-              <h3 className="text-xl font-bold text-white">
-
-                Founder - EduJourney
-
-              </h3>
-
-              <p className="text-orange-500 font-semibold mb-2">
-
-                2024 till present
-
-              </p>
-
-              <p className="text-gray-300">
-
-                I have created a project called EduJourney. EduJourney is an
-
-                intelligent application designed to facilitate learning and
-
-                research. It addresses many challenges that students and
-
-                learners have faced in the past. With EduJourney, you can: Learn
-
-                a variety of lessons here Conduct research with AI here Connect
-
-                with friends here Read book content here Stay updated with
-
-                national and international news here
-
-              </p>
-
-            </div>
-
-
-
-
-
-          {/*  Wat Management */}
-
-            <div>
-
-              <h3 className="text-xl font-bold text-white">
-
-                Monk Management System
-
-              </h3>
-
-              <p className="text-orange-500 font-semibold mb-2">
-
-                2023 till present
-
-              </p>
-
-              <p className="text-gray-300">
-
-                I created a management system for monks in the monastery that
-
-                allows for money management, number of monks, and easy data
-
-                transmission to the leadership.
-
-              </p>
-
-            </div>
-
-   
-
-
-
-          {/* Designer */}
-
-            <div>
-
-              <h3 className="text-xl font-bold text-white">Designer </h3>
-
-              <p className="text-orange-500 font-semibold mb-2">
-
-                2023 till present
-
-              </p>
-
-              <p className="text-gray-300">I worked as a designer and photographer in the temple.</p>
-
-            </div>
-
-
-
-
-
-            {/* Teaching */}
-
-            <div>
-
-              <h3 className="text-xl font-bold text-white">Teaching</h3>
-
-              <p className="text-orange-500 font-semibold mb-2">2022-2023</p>
-
-              <p className="text-gray-300">
-
-                I am a teacher to monks and children without taking any money.
-
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
+      {/* Experiences Section: Refined layout with distinct cards and icons */} 
+          {/* Experiences Section */}     {" "}
+      <section className="bg-gray-900 py-12 px-4">
+               {" "}
+        <div className="max-w-4xl mx-auto">
+                   {" "}
+          <h2 className="text-4xl font-bold text-white mb-12">Experiences</h2> 
+                 {" "}
+          <div className="border-l-2 border-gray-600 pl-6 space-y-8">
+                        {/* Experience Item */}           {" "}
+            {/* Founder - EduJourney */}           {" "}
+            <div>
+                           {" "}
+              <h3 className="text-xl font-bold text-white">
+                                Founder - EduJourney              {" "}
+              </h3>
+                           {" "}
+              <p className="text-orange-500 font-semibold mb-2">
+                                2024 till present              {" "}
+              </p>
+                           {" "}
+              <p className="text-gray-300">
+                                I have created a project called EduJourney.
+                EduJourney is an                 intelligent application
+                designed to facilitate learning and                 research. It
+                addresses many challenges that students and                
+                learners have faced in the past. With EduJourney, you can: Learn
+                                a variety of lessons here Conduct research with
+                AI here Connect                 with friends here Read book
+                content here Stay updated with                 national and
+                international news here              {" "}
+              </p>
+                         {" "}
+            </div>
+                      {/*  Wat Management */}           {" "}
+            <div>
+                           {" "}
+              <h3 className="text-xl font-bold text-white">
+                                Monk Management System              {" "}
+              </h3>
+                           {" "}
+              <p className="text-orange-500 font-semibold mb-2">
+                                2023 till present              {" "}
+              </p>
+                           {" "}
+              <p className="text-gray-300">
+                                I created a management system for monks in the
+                monastery that                 allows for money management,
+                number of monks, and easy data                 transmission to
+                the leadership.              {" "}
+              </p>
+                         {" "}
+            </div>
+                          {/* Designer */}           {" "}
+            <div>
+                           {" "}
+              <h3 className="text-xl font-bold text-white">Designer </h3>       
+                   {" "}
+              <p className="text-orange-500 font-semibold mb-2">
+                                2023 till present              {" "}
+              </p>
+                           {" "}
+              <p className="text-gray-300">
+                I worked as a designer and photographer in the temple.
+              </p>
+                         {" "}
+            </div>
+                        {/* Teaching */}           {" "}
+            <div>
+                           {" "}
+              <h3 className="text-xl font-bold text-white">Teaching</h3>       
+                   {" "}
+              <p className="text-orange-500 font-semibold mb-2">2022-2023</p>   
+                       {" "}
+              <p className="text-gray-300">
+                                I am a teacher to monks and children without
+                taking any money.              {" "}
+              </p>
+                         {" "}
+            </div>
+                     {" "}
+          </div>
+                 {" "}
+        </div>
+             {" "}
+      </section>
       {/* Contact Section: Clean and inviting with hover effects */}
       <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800 text-white">
         <div className="px-4 max-w-6xl mx-auto">
@@ -317,17 +280,22 @@ function Home() {
             </div>
             {/* Call to action or illustration */}
             <div className="hidden md:block text-center p-8">
-                <p className="text-white text-3xl font-light leading-relaxed italic animate-fade-in-up delay-200">
-                    "Innovation is seeing what everybody has seen and thinking what nobody has thought."
-                </p>
-                <p className="text-orange-500 text-2xl mt-4 font-semibold">-Mr. Ry Chet</p>
-                <img src={images[0]} alt="Hero illustration" className="w-48 h-48 rounded-full mx-auto mt-10 object-cover shadow-2xl border-4 border-orange-500 animate-pulse-slow" />
+              <p className="text-white text-3xl font-light leading-relaxed italic animate-fade-in-up delay-200 ">
+                "Innovation is seeing what everybody has seen and thinking what
+                nobody has thought."
+              </p>
+              <p className="text-orange-500 text-2xl mt-4 font-semibold">
+                -Mr. Ry Chet
+              </p>
+              <img
+                src={images[0]}
+                alt="Hero illustration"
+                className="w-48 h-48 rounded-full mx-auto mt-10 object-cover shadow-2xl border-4 border-orange-500 animate-pulse-slow"
+              />
             </div>
           </div>
         </div>
       </section>
-
-
     </>
   );
 }
