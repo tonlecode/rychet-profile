@@ -2,10 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { DownOutlined } from '@ant-design/icons';
 import { Dropdown, Menu } from 'antd';
+import VdCam from '../assets/vd/cambodiaF.mp4';
 
 // Items for ស្នាដៃ
 const items = [
-
   {
     key: 'project-1',
     label: (
@@ -30,7 +30,6 @@ const items = [
 
 // Items for បណ្ណាល័យ
 const libraryItems = [
-
   {
     key: 'library-1',
     label: (
@@ -59,8 +58,12 @@ const libraryMenu = <Menu items={libraryItems} />;
 
 function Header() {
   return (
+    <div>
+      <video src={VdCam} autoPlay loop muted className="fixed " />
     <div className="container mx-auto">
-      <nav className="fixed top-0 left-0 w-full bg-blue-600 text-white justify-between items-center rounded-b-4xl shadow-xl px-30 py-4 flex">
+      {/* Background Video */}
+
+      <nav className="fixed mt-[10rem] top-0 left-0 w-full bg-[#284bb2] text-white justify-between items-center rounded-b-4xl shadow-xl px-30 py-4 flex">
         <p className="hover:text-red-300 text-lg">
           <NavLink to="/" className=" hover:text-red-300 text-xl">
             រី-ចិត្ត / គេហទំព័រ
@@ -120,6 +123,7 @@ function Header() {
       {/* Padding below header */}
       <div className="mt-24">
         {/* Your main content here */}
+      </div>
       </div>
     </div>
   );
