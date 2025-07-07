@@ -77,9 +77,9 @@ function Home() {
           </p>
 
           {/* Image Container */}
-          <div className="flex justify-center items-center w-[71rem] mb-[-2rem] rounded-lg">
+          <div className="flex justify-center items-center w-[71rem] mb-[-2rem] ">
             <div
-              className="flex overflow-hidden rounded-lg"
+              className="flex overflow-hidden"
               ref={scrollRef}
             >
               {images.map((image, idx) => (

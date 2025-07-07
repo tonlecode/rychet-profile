@@ -18,7 +18,7 @@ function InfoSection({ image, title, color, description, items }) {
           <img
             src={image}
             alt="Section"
-            className="w-full max-w-xs object-contain rounded-xl shadow-lg transform transition duration-500 hover:scale-105"
+            className="w-full max-w-xs object-contain rounded-xl shadow-lg "
           />
         </div>
 

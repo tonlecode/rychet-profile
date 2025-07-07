@@ -59,11 +59,11 @@ const libraryMenu = <Menu items={libraryItems} />;
 function Header() {
   return (
     <div className="">
-      <video src={VdCam} autoPlay loop muted className="fixed mt-[-6rem] shadow-2xl " />
-    <div className="container mx-auto">
+      <video src={VdCam} autoPlay loop muted className="fixed mt-[-6rem]" />
+    <div className="container mx-auto ">
       {/* Background Video */}
 
-      <nav className="fixed top-0 left-0   shadow-lg w-full text-white font-medium justify-between items-center rounded-b-4xl px-30 py-4 flex">
+      <nav className="fixed top-0 left-0 shadow-lg w-full text-white font-medium justify-between items-center rounded-b-4xl px-30 py-4 flex">
         <p className="hover:text-red-300 text-lg">
           <NavLink to="/" className=" hover:text-red-300 text-xl">
             

@@ -22,7 +22,7 @@ function Contact() {
             Contact Me
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-10 bg-gray-800 border-2 border-blue-500 p-8 rounded-2xl shadow-lg">
+          <div className="grid md:grid-cols-2 gap-10 bg-gray-800  p-8  shadow-lg">
             {/* Contact Info Box */}
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6 border-b pb-2 border-blue-500">
