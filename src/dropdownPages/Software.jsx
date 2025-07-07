@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 function Software() {
   return (
-    <div className="bg-gray-100 min-h-screen py-8">
+    <div className="">
         <Header />
         
         {/* Heading Section */}
-        <div className="ml-30 mb-12">
+        <div className="ml-30">
           <h1 className="text-4xl font-bold text-blue-600">ស្នាដៃដែលបានបង្កើតកម្មវិធី</h1>
   
         </div>

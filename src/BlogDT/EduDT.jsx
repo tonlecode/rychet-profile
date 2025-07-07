@@ -11,7 +11,7 @@ import Header from "../components/Header";
 // Reusable Section Component
 function InfoSection({ image, title, color, description, items }) {
   return (
-    <div className="font-sans">
+    <div className="font-sans ">
       <div className="max-w-6xl mx-auto rounded-2xl p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Image Section */}
         <div className="rounded-2xl overflow-hidden flex justify-center">
@@ -96,8 +96,8 @@ function EduDT() {
   return (
     <div>
       <Header />
-      <div className="bg-gray-50 min-h-screen py-16 px-6 md:px-20">
-        <h1 className="text-5xl  font-sans font-bold text-center text-blue-600 mb-12">Welcome to <span className="text-orange-500">EduJourney</span></h1>
+      <div className="bg-gray-50 min-h-screen py-16 px-6 md:px-20 ">
+        <h1 className="text-5xl  font-sans font-bold text-center text-blue-600 mb-12 mt-[5rem]">Welcome to <span className="text-orange-500">EduJourney</span></h1>
 
         {/* Info Section 1: Types of Educational Content */}
         <InfoSection

@@ -16,8 +16,8 @@ function Contact() {
     <div className=" min-h-screen text-white ">
       <Header />
 
-      <section className="py-20 px-4 font-sans">
-        <div className="max-w-5xl mx-auto">
+      <section className="py-20 px-4  font-sans">
+        <div className="max-w-5xl mx-auto mt-[6rem]">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-blue-500 mb-12">
             Contact Me
           </h2>
