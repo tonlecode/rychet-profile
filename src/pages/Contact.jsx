@@ -62,7 +62,7 @@ function Contact() {
                   <span>LinkedIn</span>
                 </a>
                 <a
-                  href="https://facebook.com/rychetinnocent"
+                  href="https://www.facebook.com/share/1C35mqjCLm/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 hover:text-red-300 transition"

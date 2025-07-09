@@ -11,11 +11,12 @@ function Software() {
         
         {/* Heading Section */}
         <div className="ml-30">
-          <h1 className="text-4xl font-bold text-blue-600">ស្នាដៃដែលបានបង្កើតកម្មវិធី</h1>
   
         </div>
         
+          <h1 className="text-4xl font-bold  text-blue-600">.</h1>
         {/* Grid Layout for Blog Cards */}
+          <h1 className="text-4xl font-bold mt-[6rem] ml-30 text-blue-600">ស្នាដៃដែលបានបង្កើតកម្មវិធី</h1>
         <div className="flex justify-center item-center px-4 mt-[8rem]">
           
           {/* Blog Card 1 */}

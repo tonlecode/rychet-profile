@@ -6,9 +6,11 @@ function About() {
     <div>
         <Header></Header>
 
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tenetur accusamus at laboriosam, quas ad facere quae doloremque nostrum laborum rem nulla sed quaerat possimus voluptas? Quis hic dolorum nam.</p>
-        </div>
+       <div>
+        <p className=''>កំពុងរៀបចំ  page about </p>
+        <p className='m-[20rem] text-center font-bold text-5xl'>កំពុងរៀបចំ page about<span className='text-green-600'>please wait...</span></p>
+        
+       </div>
 
     </div>
   )
