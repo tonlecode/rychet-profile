@@ -91,14 +91,14 @@ function Header() {
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                  វិស្វកម្មកម្មវិធី
+                 - វិស្វកម្មកម្មវិធី
                 </NavLink>
                 <NavLink
                   to="/morefile/project2"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                  ឯកសារ
+                 - ឯកសារ
                 </NavLink>
               </div>
             )}
@@ -121,14 +121,14 @@ function Header() {
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                  រូបភាព
+                 - រូបភាព
                 </NavLink>
                 <NavLink
                   to="/library/videos"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                  វិដេអូ
+                 - វិដេអូ
                 </NavLink>
               </div>
             )}
