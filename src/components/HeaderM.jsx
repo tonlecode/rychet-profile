@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
-import VdCam3 from "../assets/vd/cambodiaF3.mp4";
+import VdCam4 from "../assets/vd/cambodiaF4.mp4";
+import angkor from '../assets/myphoto/angkor.jpg'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ function Header() {
       <nav className="fixed top-0 left-0 w-full z-10 flex justify-between items-center px-4 py-3 text-white bg-black/50">
         {/* Background Video */}
         <video
-          src={VdCam3}
+          src={VdCam4}
           autoPlay
           loop
           muted
@@ -31,18 +32,18 @@ function Header() {
 
       {/* Slide-in Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-64 h-full bg-white text-black transform transition-transform duration-300 z-20 ${
+        className={`fixed top-0 right-0 w-64 h-full bg-[#f7f6f4] text-black  transform transition-transform duration-300 z-20 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b">
+        <div className="flex justify-between items-center p-4 border-b bg-[#f7f6f4] ">
           <h2 className="text-lg font-bold">ម៉ឺនុយ</h2>
           <button onClick={toggleMenu} className="text-xl">
             <AiOutlineClose />
           </button>
         </div>
 
-        <div className="flex flex-col space-y-4 p-4 font-[Noto_Sans_Khmer] text-[16px]">
+        <div className="flex flex-col space-y-6 p-4 pl-4 font-[Noto_Sans_Khmer] text-[18px] bg-[#f7f6f4]">
           <NavLink to="/" onClick={toggleMenu} className="hover:text-blue-500">
             ទំព័រដើម
           </NavLink>
@@ -75,13 +76,11 @@ function Header() {
             វិដេអូ
           </NavLink>
         </div>
+        <img className="mt-[3rem]" src={angkor} alt="bg angkor" />
       </div>
 
       {/* Main Content */}
-      <div className="mt-24 px-4 text-white">
-        <h2 className="text-2xl font-semibold">ស្វាគមន៍</h2>
-        <p>នេះជាគេហទំព័រសម្រាប់បង្ហាញស្នាដៃ និងបណ្ណាល័យ</p>
-      </div>
+     
     </div>
   );
 }
