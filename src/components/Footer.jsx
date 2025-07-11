@@ -21,7 +21,7 @@ function Footer() {
         {/* Contact Section */}
         <div className="w-1/3 mb-4">
           <h4 className=" text-lg">ទំនាក់ទំនង</h4>
-          <p className="font-sans">ទូរស័ព្ទ: +855 71 46 49 644</p>
+          <p className="">ទូរស័ព្ទ:<span className="font-sans"> +855 71 46 49 644</span></p>
           <p className="font-sans">Email: chetryinnocent@gmail.com</p>
         </div>
 
