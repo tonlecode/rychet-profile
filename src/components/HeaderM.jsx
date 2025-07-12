@@ -1,12 +1,19 @@
-import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdMenu, IoMdArrowDropdown } from "react-icons/io";
 import { AiOutlineClose } from "react-icons/ai";
 import VdCam4 from "../assets/vd/cambodiaF4.mp4";
 import angkor from "../assets/myphoto/angkor.jpg";
-
+import React, { useState, useRef, useEffect } from "react";
 
 function Header() {
+  const videoRef = useRef();
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.setAttribute("webkit-playsinline", "true");
+    }
+  }, []);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSnadaiOpen, setIsSnadaiOpen] = useState(false);
   const [isLibraryOpen, setIsLibraryOpen] = useState(false);
@@ -31,29 +38,28 @@ function Header() {
 
   return (
     <div className="relative h-screen shadow-4xl overflow-hidden mb-[-20rem]">
-   {/* Navbar */}
-<nav className="relative w-full flex justify-between items-center px-4 py-3 text-white ">
-  {/* Video Background */}
-  <video
-    src={VdCam4}
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover z-[-1] pointer-events-none"
-  />
-  
-  <h1 className=""></h1>
-  <button
-    onClick={toggleMenu}
-    className="text-3xl p-2 focus:outline-none hover:text-red-300"
-  >
-    <IoMdMenu />
-  </button>
-</nav>
+      {/* Navbar */}
+      <nav className="relative w-full flex justify-between items-center px-4 py-3 text-white ">
+        {/* Video Background */}
+        <video
+          ref={videoRef}
+          src={VdCam4}
+          autoPlay
+          muted
+          loop
+          playsInline
+          webkit-playsinline="true"
+          className="absolute inset-0 w-full h-full object-cover z-[-1] pointer-events-none"
+        />
 
-
-
+        <h1 className=""></h1>
+        <button
+          onClick={toggleMenu}
+          className="text-3xl p-2 focus:outline-none hover:text-red-300"
+        >
+          <IoMdMenu />
+        </button>
+      </nav>
 
       {/* Slide-in Mobile Menu */}
       <div
@@ -98,14 +104,14 @@ function Header() {
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                 - វិស្វកម្មកម្មវិធី
+                  - វិស្វកម្មកម្មវិធី
                 </NavLink>
                 <NavLink
                   to="/morefile"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                 - ឯកសារ
+                  - ឯកសារ
                 </NavLink>
               </div>
             )}
@@ -128,14 +134,14 @@ function Header() {
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                 - រូបភាព
+                  - រូបភាព
                 </NavLink>
                 <NavLink
                   to="/videos"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
-                 - វិដេអូ
+                  - វិដេអូ
                 </NavLink>
               </div>
             )}
