@@ -32,19 +32,18 @@ function Header() {
   return (
     <div className="relative h-screen shadow-4xl overflow-hidden mb-[-20rem]">
    {/* Navbar */}
-<nav className="fixed w-full flex justify-between items-center px-4 py-3 text-white bg-black/50">
-
-  {/* ✅ Background Video with full iOS-safe attributes */}
+<nav className="relative w-full flex justify-between items-center px-4 py-3 text-white bg-black/50 h-[80px]">
+  {/* Video Background */}
   <video
     src={VdCam4}
     autoPlay
     loop
     muted
     playsInline
-    className="absolute top-0 left-0 w-full h-full object-cover z-[-1] pointer-events-none"
+    className="absolute inset-0 w-full h-full object-cover z-[-1] pointer-events-none"
   />
-
-  <h1 className=""></h1>
+  
+  <h1 className="text-lg font-bold">My Site</h1>
   <button
     onClick={toggleMenu}
     className="text-3xl p-2 focus:outline-none hover:text-red-300"
@@ -52,6 +51,7 @@ function Header() {
     <IoMdMenu />
   </button>
 </nav>
+
 
 
 
