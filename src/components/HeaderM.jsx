@@ -5,6 +5,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import VdCam4 from "../assets/vd/cambodiaF4.mp4";
 import angkor from "../assets/myphoto/angkor.jpg";
 
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSnadaiOpen, setIsSnadaiOpen] = useState(false);
@@ -29,7 +30,7 @@ function Header() {
   };
 
   return (
-    <div className="relative h-screen shadow-4xl overflow-hidden">
+    <div className="relative h-screen shadow-4xl overflow-hidden mb-[-20rem]">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-10 flex justify-between items-center px-4 py-3 text-white bg-black/50">
        <video
@@ -68,7 +69,7 @@ function Header() {
           </NavLink>
 
           <NavLink
-            to="/software"
+            to="/about"
             onClick={toggleMenu}
             className="hover:text-red-300"
           >
@@ -78,7 +79,7 @@ function Header() {
           {/* ស្នាដៃ Dropdown */}
           <div>
             <a
-              href="/morefile"
+              href="#"
               onClick={toggleSnadaiDropdown}
               className="flex items-center hover:text-blue-300"
             >
@@ -88,14 +89,14 @@ function Header() {
             {isSnadaiOpen && (
               <div className="ml-4 mt-2 space-y-2">
                 <NavLink
-                  to="/morefile/project1"
+                  to="/software"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
                  - វិស្វកម្មកម្មវិធី
                 </NavLink>
                 <NavLink
-                  to="/morefile/project2"
+                  to="/morefile"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
@@ -108,7 +109,7 @@ function Header() {
           {/* បណ្ណាល័យ Dropdown */}
           <div>
             <a
-              href="/library"
+              href="#"
               onClick={toggleLibraryDropdown}
               className="flex items-center hover:text-blue-300"
             >
@@ -118,14 +119,14 @@ function Header() {
             {isLibraryOpen && (
               <div className="ml-4 mt-2 space-y-2">
                 <NavLink
-                  to="/library/images"
+                  to="/photos"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
                  - រូបភាព
                 </NavLink>
                 <NavLink
-                  to="/library/videos"
+                  to="/videos"
                   onClick={toggleMenu}
                   className="text-sm block hover:text-red-300 font-[Noto_Sans_Khmer] text-[17px]"
                 >
@@ -136,7 +137,7 @@ function Header() {
           </div>
 
           <NavLink
-            to="/videos"
+            to="/contact"
             onClick={toggleMenu}
             className="hover:text-red-300"
           >

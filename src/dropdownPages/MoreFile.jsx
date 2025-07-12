@@ -8,8 +8,8 @@ function MoreFile() {
         <Header></Header>
 
        <div>
-        <p className=''>កំពុងរៀបចំ</p>
-        <p className='m-[20rem] text-center font-bold text-5xl'>កំពុងរៀបចំ page file <span className='text-green-600'>please wait...</span></p>
+        <p className=''>a</p>
+        <p className='m-[20rem] text-center font-bold text-5xl'>កំពុងរៀបចំ</p>
         
        </div>
 

@@ -2,8 +2,19 @@ import React from 'react'
 import Header from '../components/Header'
 function Videos() {
   return (
-    <div>
-	<Header></Header>
+   <div>
+
+      <div>
+
+        <Header></Header>
+      </div>
+
+       <div>
+        <p className=''>a </p>
+        <p className='m-[20rem] text-center font-bold text-5xl'>កំពុងរៀបចំ</p>
+        
+       </div>
+
     </div>
   )
 }

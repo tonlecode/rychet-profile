@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
+import HeaderM from '../components/HeaderM';
 
-function Photos() {
+function PhotosM() {
   const photoList = [
     { id: 1, url: 'https://i.imgur.com/deVMHZL.jpeg', title: 'Photo 1' },
     { id: 2, url: 'https://i.imgur.com/ce2Hehn.jpeg', title: 'Photo 2' },
@@ -39,30 +39,35 @@ function Photos() {
 
   return (
     <div>
-      <Header />
-      <section className="px-6 md:px-16 py-12">
-        <h1 className="text-4xl font-extrabold text-blue-600 mb-18 text-center"></h1>
-        <h1 className='text-4xl font-extrabold text-blue-600 mb-12 '>រូបភាពអនុស្សាវរីយ៍</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 font-sans">
+      <HeaderM />
+
+      <section className="px-4 sm:px-6 py-10 bg-gray-50 min-h-screen">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 text-center mb-10 ">
+          រូបភាពអនុស្សាវរីយ៍
+        </h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 font-sans">
           {photoList.map((photo) => (
             <a
               key={photo.id}
               href={photo.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl overflow-hidden shadow-lg bg-white border border-gray-200 "
+              className="rounded-xl overflow-hidden shadow-md bg-white border border-gray-200 transition hover:shadow-xl"
             >
               <img
                 src={photo.url}
                 alt={photo.title}
-                className="w-full h-64 object-cover hover:border-2 hover:border-blue-500"
+                className="w-full h-52 sm:h-60 object-cover transition-transform duration-300 hover:scale-105"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = '/placeholder.png';
                 }}
               />
-              <div className="p-4 text-center">
-                <h3 className="text-lg font-semibold text-blue-800 mb-2">{photo.title}</h3>
+              <div className="p-3 text-center">
+                <h3 className="text-base sm:text-lg font-semibold text-blue-800 mb-1">
+                  {photo.title}
+                </h3>
                 <p className="text-sm text-blue-500">Click to view</p>
               </div>
             </a>
@@ -73,4 +78,4 @@ function Photos() {
   );
 }
 
-export default Photos;
+export default PhotosM;
