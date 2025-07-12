@@ -32,13 +32,13 @@ function Header() {
   return (
     <div className="relative h-screen shadow-4xl overflow-hidden mb-[-20rem]">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-10 flex justify-between items-center px-4 py-3 text-white bg-black/50">
+      <nav className="fixed w-full flex justify-between items-center px-4 py-3 text-white bg-black/50">
        <video
           src={VdCam4}
           autoPlay
           loop
           muted
-          className="absolute top-0 left-0 w-full h-full object-cover z-[-1] pointer-events-none"
+          className="absolute top-0 left-0 w-full h-full object-cover z-[-1] "
         />
 
         <h1 className=""></h1>
