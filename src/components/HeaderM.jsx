@@ -32,7 +32,7 @@ function Header() {
   return (
     <div className="relative h-screen shadow-4xl overflow-hidden mb-[-20rem]">
    {/* Navbar */}
-<nav className="relative w-full flex justify-between items-center px-4 py-3 text-white bg-black/50 h-[80px]">
+<nav className="relative w-full flex justify-between items-center px-4 py-3 text-white ">
   {/* Video Background */}
   <video
     src={VdCam4}
@@ -43,7 +43,7 @@ function Header() {
     className="absolute inset-0 w-full h-full object-cover z-[-1] pointer-events-none"
   />
   
-  <h1 className="text-lg font-bold">My Site</h1>
+  <h1 className=""></h1>
   <button
     onClick={toggleMenu}
     className="text-3xl p-2 focus:outline-none hover:text-red-300"
