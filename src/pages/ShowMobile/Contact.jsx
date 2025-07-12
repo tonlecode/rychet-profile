@@ -12,10 +12,10 @@ import {
 
 function Contact() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen  text-white">
       <HeaderM />
 
-      <section className="pt-[6rem] pb-16 px-4 font-sans mt-[-20rem]">
+      <section className="pt-[6rem] pb-16 px-4 bg-white  font-sans mt-[-20rem]">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-blue-500 mb-10">
             Contact Me

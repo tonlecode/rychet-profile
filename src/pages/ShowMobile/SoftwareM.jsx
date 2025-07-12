@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 function SoftwareM() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className=" min-h-screen">
       <Header />
 
       {/* Heading Section */}
-      <div className=" px-4 text-center">
+      <div className=" px-4 mt-[-20rem] text-center">
         <h1 className="text-2xl sm:text-3xl font-bold text-blue-600">
           ស្នាដៃដែលបានបង្កើតកម្មវិធី
         </h1>
