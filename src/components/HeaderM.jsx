@@ -37,9 +37,11 @@ function Header() {
   };
 
   return (
-    <div className="relative h-screen shadow-4xl overflow-hidden mb-[-20rem]">
+
+    <div className="relative h-screen overflow-hidden ">
       {/* Navbar */}
-      <nav className="relative w-full flex justify-between items-center px-4 py-3 text-white ">
+ 
+     <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 py-3 bg-black text-white shadow-lg">
         {/* Video Background */}
         <video
           ref={videoRef}

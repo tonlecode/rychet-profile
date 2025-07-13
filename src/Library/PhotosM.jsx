@@ -41,7 +41,7 @@ function PhotosM() {
     <div>
       <HeaderM />
 
-      <section className="px-4 sm:px-6 py-10 bg-gray-50 min-h-screen">
+      <section className="px-4 sm:px-6 py-10 bg-gray-50 min-h-screen mt-[-20rem]">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600 text-center mb-10 ">
           រូបភាពអនុស្សាវរីយ៍
         </h1>
