@@ -8,7 +8,7 @@ function Photos() {
     <div>
       <Header />
       <section className="px-6 md:px-16 py-12">
-        <h1 className="text-4xl font-extrabold text-blue-600 mb-12">វីដេអូអនុស្សាវរីយ៍</h1>
+        <h1 className="text-4xl font-extrabold text-blue-600 mb-12">រូបភាពអនុស្សាវរីយ៍</h1>
         <div className="flex items-center justify-center">
           <div className="p-8 md:p-12 rounded-2xl max-w-xl w-full text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-500 font-sans">
