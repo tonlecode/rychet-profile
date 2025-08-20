@@ -12,6 +12,7 @@ import HeaderM from "../components/HeaderM";
 function InfoSection({ image, title, color, description, items }) {
   return (
     <div className="font-sans px-4 sm:px-6">
+   
       <div className="max-w-4xl mx-auto rounded-2xl p-4 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white shadow-md">
         {/* Image Section */}
         <div className="flex justify-center">
